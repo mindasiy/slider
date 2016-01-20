@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Slider Demo</title>
+    <link rel="Stylesheet" href="css/jquery.slider.css" type="text/css"/>
+    <style type="text/css">
+            .slider
+    {
+        margin-top: 10px;
+        height: 5px;
+        background-color: #444;
+        border: 1px solid #444;
+        position: relative;
+        border-radius: 8px;
+    }
+    .slider .jquery-completed
+    {
+        height: 5px;
+        background-color: #4b0;
+        top: 0;
+        left:1px;
+        position: absolute;
+        border-radius: 8px;
+    }
+    .slider .jquery-jslider
+    {
+        top: -6px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        background: #4b0 none repeat scroll 0 0;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        height: 16px;
+        width: 16px;
+    }
+    </style>
+    
+<script src="http://libs.useso.com/js/jquery/2.1.0/jquery.min.js"></script>
+<script src="./jquery.slider.js"></script>
+    <script type="text/javascript">
+$(function() {
+ 
+
+ 
+		var blue = $.fn.jSlider({
+            renderTo: '.conpo',
+            size: { barWidth: 230, sliderWidth: 16 },
+            enable: true,
+            barCssName: 'slider',
+            onChanging: function(percentage, e) {
+            },
+            onChanged:function(percentage,e) {
+            }
+        });
+});
+    </script>
+</head>
+<body>
+<br/><br/>
+<div class="conpo"></div>
+<br/><br/>
+<div class="conpo"></div>
+<br/><br/>
+<div class="conpo"></div>
+<br/><br/>
+</body>
+</html>
